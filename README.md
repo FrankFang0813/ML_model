@@ -64,7 +64,7 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   ```
   
   
-  *羅吉斯迴歸(logistic regression)
+  * 羅吉斯迴歸(logistic regression)
   
   ```js
   
@@ -87,7 +87,7 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   ```
   
   
-  *樸素貝葉斯模型(Naïve Bayesian classifier)
+  * 樸素貝葉斯模型(Naïve Bayesian classifier)
   ```js
   
   為非線性分類模型
