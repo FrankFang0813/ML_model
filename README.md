@@ -32,7 +32,7 @@ Just Note
     1.無法處理非線性問題。
     2.會有共線性問題，但無法解決線性組合高度相關的問題。
 ```
-*正規化回歸 (Regularized Regression)
+* 正規化回歸 (Regularized Regression)
 
 ```js
 
@@ -40,7 +40,7 @@ Just Note
 L1和L2的參考學習影片:https://www.youtube.com/watch?v=TmzzQoO8mr4
 https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regularization%E5%B7%AE%E7%95%B0-8d7fc089b35c
 
-*LASSO Regression
+* LASSO Regression
   迴歸+L1 penalty(一階懲罰項,絕對值)
   LASSO不僅能正規化優化模型，還能自動執行變數篩選(Feature selection)。
   Lasso幫你識別並挑選出有最強訊號的一個變數。
@@ -50,7 +50,7 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   迴歸誤差平方和+L2 penalty(二階懲罰項,平方項)。
   將迴歸係數值平均地分散在各個變數之間。
   
-＊彈性網罩模型(elastic nets)
+* 彈性網罩模型(elastic nets)
 
   迴歸模型中，讓L1懲罰項與L2懲罰項都加入模型(權重相加=1)。
   LASSO為L2權重=0的型態，Ridge為L1權重=0的型態。
