@@ -32,6 +32,7 @@ Just Note
     1.無法處理非線性問題。
     2.會有共線性問題，但無法解決線性組合高度相關的問題。
 ```
+
 * 正規化回歸 (Regularized Regression)
 
 ```js
@@ -64,7 +65,7 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   ```
   
   
-  * 羅吉斯迴歸(logistic regression)
+* 羅吉斯迴歸(logistic regression)
   
   ```js
   
@@ -87,7 +88,7 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   ```
   
   
-  * 樸素貝葉斯模型(Naïve Bayesian classifier)
+* 樸素貝葉斯模型(Naïve Bayesian classifier)
   ```js
   
   為非線性分類模型
@@ -111,4 +112,95 @@ https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regulariza
   
   ```
   
-  *
+* 集群分析(K-means)
+  
+  ```js
+  
+  K-means為非監督學習，先給定K個群心(分K群)，利用各個樣本到每個群心，取最短歐式距離(直線距離)，判給歐式距離最短的群心
+  ，群心再依照分類後的樣本，再更新一次群心，直到所有群心的變動收斂為止。也被稱為懶惰學習。
+  
+  優點:
+    1.原理簡單且訓練速度快。
+    2.算法可解釋度高。
+    3.主要僅需調整參數K。
+  
+  缺點:
+    1.對於噪音及異常樣本較敏感。
+    2.成效很依賴輸入的數據集，有些型態數據集很難收斂；或者某類別樣本較少，聚類效果較差。
+    3.效果較局部，並非全部類別準確。
+    
+  參考資料:https://blog.csdn.net/u014465639/article/details/71342072
+  
+  ```
+  
+* KNN(K nearest neighborhood)
+  
+  ```js
+  
+  KNN為監督式學習，假設欲預測點是i，找出離i最近的k筆資料多數是哪一類，預測i的類型。
+  K為奇數較好，為偶數可能碰上無法分類的情況。
+  
+  當K=1的時候容易Overfitting，而K很大的時候容易underfitting。
+  
+  優點:
+    1.對異常值不敏感。
+    2.無資料輸入假定。
+    3.精度高。
+    
+  缺點:
+    1.訓練模型依賴訓練集資料且不可丟棄。
+    2.時間複雜度(計算經過幾道程序)及空間複雜度(耗費的記憶體成本)較高。
+    3.無法處理遺缺值。
+    
+    參考資料:https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df
+   ```
+   
+ * 支援向量機 SVM (Support Vector Machines)
+   
+   ```js
+   
+   為一種監督式學習，利用統計風險最小化的原則來估計一個分類的超平面(hyperplane)，找到決策邊界，使到兩分類的邊界最大化(落在邊界上或邊界內的點稱為支援向量support vector)，以完美區隔兩類別。
+   但真實資料不可能完美分類，故SVM藉由誤差限度不敏感損失函數(ε-insensitive loss)能容忍部分誤差(即少許樣本落在邊界內)。
+   運用到核函數，用意在於低維空間無法取得超平面的解，將維度轉換到更高維空間，使其找到解。
+   
+   優點:
+    1.解決高維特徵分類問題很有效。
+    2.儘管特徵維度大於樣本數依然可使用。
+    3.核函數可將低維轉換高維，可靈活解決各種非線性各種非線性分類迴歸問題。
+    
+   缺點:
+    1.若特徵維度遠高於樣本數，效果則普通。
+    2.對缺失值敏感。
+    3.樣本量過大時，映射到高維度，運算量會過高。
+    4.核函數選擇無適合的標準，較難選擇。
+   
+   參考資料:https://shaohua-mi.gitbooks.io/myself/content/svm/svmde-you-dian-que-dian.html
+   
+   ```
+   
+ * 分類與迴歸樹 (CART樹)
+ 
+ ```js
+   可用於分類及迴歸，根據是否滿足條件進行不斷的二分。
+   屬於無母數分析方法，不需假設資料的線性關係或者常態分配。
+   為隨機森林演算法的基礎。
+   
+   以某個目標函數，將樣本遞迴分割(recursive partition)成許多同質群組，達到群組內異質度最小
+   ，分類就用組內多數決(基尼指數最小)，迴歸就用均方誤差(MSE)最小。
+   
+   優點:
+    1.無須對母體進行預先假設。
+    2.容易解釋，視覺化。
+    3.離散或連續皆可建模，且無需處理缺失值。
+    4.可以透過交叉驗證的剪枝來選擇模型。
+    
+   缺點:
+    1.容易overfitting或undrfitting。
+    2.模型較不穩定，樣本小變動，模型可能劇烈變動。
+    3.準確度只侷限於局部。
+    
+  參考資料:https://juejin.cn/post/6844903513500172295
+          https://www.jamleecute.com/decision-tree-cart-%E6%B1%BA%E7%AD%96%E6%A8%B9/
+          
+  ```
+  
