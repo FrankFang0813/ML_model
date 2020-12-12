@@ -194,6 +194,7 @@ Just Note
   * 類神經網路ANN （Artificial Neural Networks）
    
    ```js
+   
 　　一．專有名詞：
     
       ＊輸入層（Input Layer）：
