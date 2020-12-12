@@ -162,11 +162,11 @@ Just Note
 
      ＊參考資料:https://shaohua-mi.gitbooks.io/myself/content/svm/svmde-you-dian-que-dian.html
 
-     ```
+   ```
    
- * 分類與迴歸樹 (CART樹)
+  * 分類與迴歸樹 (CART樹)
  
- ```js
+   ```js
    1.可用於分類及迴歸，根據是否滿足條件進行不斷的二分。
    2.屬於無母數分析方法，不需假設資料的線性關係或者常態分配。
    3.為隨機森林演算法的基礎。
@@ -184,10 +184,10 @@ Just Note
     2.模型較不穩定，樣本小變動，模型可能劇烈變動。
     3.準確度只侷限於局部。
     
-  參考資料:https://juejin.cn/post/6844903513500172295
+  　＊參考資料:https://juejin.cn/post/6844903513500172295
           https://www.jamleecute.com/decision-tree-cart-%E6%B1%BA%E7%AD%96%E6%A8%B9/
           
-  ```
+     ```
   
   
   
