@@ -29,10 +29,10 @@ Just Note
     3.同質性(Heteroscedasticity):殘差項之間有相同的變異。
     4.獨立性(Independency):殘差項之間相互獨立。
 
-  優點:
+  ＊優點:
       1.直觀，線性容易理解。
       2.限制多，樣本需求較少。
-  缺點:
+  ＊缺點:
       1.無法處理非線性問題。
       2.會有共線性問題，但無法解決線性組合高度相關的問題。
   ```
@@ -60,15 +60,15 @@ Just Note
 
 
 
-    參考資料:
+    ＊參考資料:
     https://ithelp.ithome.com.tw/articles/10227654
     https://www.zhihu.com/question/38121173
     https://www.itread01.com/content/1542591853.html
 
-    ```
+   ```
   
   
-    * 羅吉斯迴歸(logistic regression)
+   * 羅吉斯迴歸(logistic regression)
 
     ```js
 
@@ -85,7 +85,7 @@ Just Note
 
 
 
-    參考資料:
+    ＊參考資料:
     https://medium.com/%E5%B1%95%E9%96%8B%E6%95%B8%E6%93%9A%E4%BA%BA%E7%94%9F/python%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-111-%E7%BE%85%E5%90%89%E6%96%AF%E5%9B%9E%E6%AD%B8%E5%88%86%E9%A1%9E%E5%99%A8%E4%BB%8B%E7%B4%B9%E5%8F%8A%E6%87%89%E7%94%A8-caa1cebcf831
 
     ```
@@ -107,12 +107,12 @@ Just Note
     3.只需少量樣本進行訓練。
     4.可以處理帶雜訊或遺缺值的資料(相對的，遺缺值會造成'零頻率'，導致某些特徵無法一起運算，須以平滑技術處理)。
   
-  缺點:
+  ＊缺點:
     1.特徵同等重要且互相獨立的假設通常不符合現實狀況。
     2.不適合有大量數值屬性的資料集。
     3.刪除重複出現的高度相關的特徵，可能會丟失頻率信息，影響效果。
 
-  參考網址：https://kknews.cc/code/ax2xkox.html
+  ＊參考網址：https://kknews.cc/code/ax2xkox.html
   ```
 
   
@@ -135,34 +135,34 @@ Just Note
     2.時間複雜度(計算經過幾道程序)及空間複雜度(耗費的記憶體成本)較高。
     3.無法處理遺缺值。
     
-    參考資料:https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df
+    ＊參考資料:https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df
    ```
    
   * 支援向量機 SVM (Support Vector Machines)
    
    ```js
    
-   ’’’
-   為一種監督式學習，利用統計風險最小化的原則來估計一個分類的超平面(hyperplane)，找到決策邊界，
-   使到兩分類的邊界最大化(落在邊界上或邊界內的點稱為支援向量support vector)，以完美區隔兩類別。
-   但真實資料不可能完美分類，故SVM藉由誤差限度不敏感損失函數(ε-insensitive loss)能容忍部分誤差(即少許樣本落在邊界內)。
-   運用到核函數，用意在於低維空間無法取得超平面的解，將維度轉換到更高維空間，使其找到解。
-   ’’’
-   
-   ＊優點:
-    1.解決高維特徵分類問題很有效。
-    2.儘管特徵維度大於樣本數依然可使用。
-    3.核函數可將低維轉換高維，可靈活解決各種非線性各種非線性分類迴歸問題。
-    
-   ＊缺點:
-    1.若特徵維度遠高於樣本數，效果則普通。
-    2.對缺失值敏感。
-    3.樣本量過大時，映射到高維度，運算量會過高。
-    4.核函數選擇無適合的標準，較難選擇。
-   
-   參考資料:https://shaohua-mi.gitbooks.io/myself/content/svm/svmde-you-dian-que-dian.html
-   
-   ```
+     ’’’
+     為一種監督式學習，利用統計風險最小化的原則來估計一個分類的超平面(hyperplane)，找到決策邊界，
+     使到兩分類的邊界最大化(落在邊界上或邊界內的點稱為支援向量support vector)，以完美區隔兩類別。
+     但真實資料不可能完美分類，故SVM藉由誤差限度不敏感損失函數(ε-insensitive loss)能容忍部分誤差(即少許樣本落在邊界內)。
+     運用到核函數，用意在於低維空間無法取得超平面的解，將維度轉換到更高維空間，使其找到解。
+     ’’’
+
+     ＊優點:
+      1.解決高維特徵分類問題很有效。
+      2.儘管特徵維度大於樣本數依然可使用。
+      3.核函數可將低維轉換高維，可靈活解決各種非線性各種非線性分類迴歸問題。
+
+     ＊缺點:
+      1.若特徵維度遠高於樣本數，效果則普通。
+      2.對缺失值敏感。
+      3.樣本量過大時，映射到高維度，運算量會過高。
+      4.核函數選擇無適合的標準，較難選擇。
+
+     ＊參考資料:https://shaohua-mi.gitbooks.io/myself/content/svm/svmde-you-dian-que-dian.html
+
+     ```
    
  * 分類與迴歸樹 (CART樹)
  
