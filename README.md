@@ -245,11 +245,15 @@ Just Note
       2.學習過程難以觀察，模型較難解釋。
       3.需要大量樣本訓練，且學習時間較長，甚至有可能達不到目的。
       
+   ＊參考資料：https://www.itread01.com/content/1546620500.html
+              https://www.itread01.com/content/1545271264.html
+              https://medium.com/@evan_hsiao/%E5%BE%9Ecoursera%E5%AD%B8%E7%BF%92%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-bd6bad6f5e14
+              
    ```
    
    
 <h2 id = 002 >非監督式學習<h2>   
-   * PCA
+  
    
    
    
