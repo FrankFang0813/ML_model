@@ -1,16 +1,28 @@
-ML_model整理
+# ML_model整理
 
-## 監督式學習 #
-   *  ## [多元迴歸分析](#002) #
-# 非監督式學習(#002) #
-# 集成學習(#003) #
+ ## 監督式學習 #
+   *  ### [多元迴歸分析](#001) #
+   *  ### [正規化回歸](#002) #
+   *  ### [羅吉斯迴歸](#003) #
+   *  ### [樸素貝葉斯模型](#004) #
+   *  ### [KNN](#005) #
+   *  ### [支援向量機](#006) #
+   *  ### [CART樹](#007) #
+   *  ### [類神經網路ANN](#008) #
+ ## 非監督式學習 #
+   *  ### [主成分分析PCA](#009) #
+   *  ### [關聯分析](#010) #
+   *  ### [K-means](#011) #
+ ## 集成學習 #
+   *  ### [Bagging](#012) #
+   *  ### [Boosting](#013) #
+   *  ### [stacking](#014) #
 
 
-
-<h2 id="001">監督式學習</h2>
+ ## 監督式學習 #
   
   
-  <h2 id="002">* 多元迴歸分析（線性）</h2>
+  <h2 id="001">* 多元迴歸分析（線性）</h2>
   ```js
 
   一．常見的迴歸係數估計方法：
@@ -43,7 +55,7 @@ ML_model整理
       2.會有共線性問題，但無法解決線性組合高度相關的問題。
   ```
 
-  * 正規化回歸（Regularized Regression）
+  <h2 id="002">* 正規化回歸（Regularized Regression）</h2>
   ＃確認線性迴歸有over-fitting問題，再試試看＂正規化迴歸＂＃
   
   ```js
@@ -74,7 +86,7 @@ ML_model整理
    ```
   
   
-  * 羅吉斯迴歸(logistic regression)
+  <h2 id="003">* 羅吉斯迴歸(logistic regression)</h2>
 
   ```js
 
@@ -97,7 +109,7 @@ ML_model整理
    ```
   
   
-  * 樸素貝葉斯模型（Naïve Bayesian classifier）
+  <h2 id="004">* 樸素貝葉斯模型（Naïve Bayesian classifier）</h2>
 
   ```js
   
@@ -123,7 +135,7 @@ ML_model整理
   ```
 
   
-  * KNN（K nearest neighborhood）
+  <h2 id="005">* KNN（K nearest neighborhood）</h2>
   
   ```js
   
@@ -145,7 +157,7 @@ ML_model整理
     ＊參考資料：https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df
    ```
    
-  * 支援向量機 SVM （Support Vector Machines）
+  <h2 id="006">* 支援向量機 SVM （Support Vector Machines）</h2>
    
    ```js
    
@@ -171,7 +183,7 @@ ML_model整理
 
    ```
    
-  * 分類與迴歸樹 （CART樹）
+  <h2 id="007">* 分類與迴歸樹 （CART樹）</h2>
  
    ```js
    
@@ -197,7 +209,7 @@ ML_model整理
 
    ```
    
-  * 類神經網路ANN （Artificial Neural Networks）
+  <h2 id="008">* 類神經網路ANN （Artificial Neural Networks）</h2>
    
    ```js
    
@@ -259,9 +271,9 @@ ML_model整理
    ```
    
    
-<h2 id = 002 >非監督式學習<h2>   
+ ## 非監督式學習 #   
   
-  * 主成分分析PCA（Principal components analysis,PCA）：
+  <h2 id="009">* 主成分分析PCA（Principal components analysis,PCA）</h2>
   
   ```js
   　－為一種統計分析、簡化數據集的方法，利用正交變換來對一系列可能相關的變數的觀測值進行線性變換
@@ -287,7 +299,7 @@ ML_model整理
                
   ```
    
-  * 關聯分析
+  <h2 id="010">* 關聯分析</h2>
   
   ```js
   
@@ -308,7 +320,7 @@ ML_model整理
     
   ```
   
-  * 集群分析(K-means)
+  <h2 id="011">* K-means</h2>
   
   ```js
 
@@ -333,7 +345,7 @@ ML_model整理
 
 
 
-<h2 id = 003 >集成學習（ensemble learning）<h2>
+## 集成學習（ensemble learning） #
   
   ```js
   －通過建立幾個模型組合來解決單一預測問題。
@@ -341,7 +353,7 @@ ML_model整理
   　，這些預測最後結合成單預測，因此優於任何一個單分類器做出的預測。
   ```
   
-  * 引導聚集算法（Boostrap AGGregatING, BAGGING）：
+  <h2 id="012">* 引導聚集算法（Boostrap AGGregatING, BAGGING）</h2>
   
   ```js
 
@@ -368,7 +380,7 @@ ML_model整理
     ＊參考資料：Hung-yi Lee的youtube頻道 https://www.youtube.com/watch?v=tH9FH1DH5n0
   ```
    
-   * Boosting
+   <h2 id="013">* Boosting</h2>
    
    ```js
      ＊概念：
@@ -413,7 +425,7 @@ ML_model整理
                   
    ```
    
-   * 堆疊法（stacking）：
+   <h2 id="014">* 堆疊法（stacking）</h2>
    
    ```js
      ＊概念：
