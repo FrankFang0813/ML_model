@@ -56,9 +56,7 @@
   ```
 
   <h2 id="002">* 正規化回歸（Regularized Regression）</h2>
-  
-  
-  
+
   ```js
    ＃確認線性迴歸有over-fitting問題，再試試看＂正規化迴歸＂＃
 
